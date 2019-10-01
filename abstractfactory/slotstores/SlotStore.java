@@ -1,7 +1,6 @@
 package abstractfactory.slotstores;
 
-import abstractfactory.componentfactories.SlotComponentFactory;
-import abstractfactory.Slot;
+import abstractfactory.slots.Slot;
 
 public abstract class SlotStore {
     Slot slot;
@@ -9,6 +8,7 @@ public abstract class SlotStore {
     public Slot orderSlot(String type)
     {
         slot = createSlot(type);
+        slot.assemble();
         return slot;
     }
 

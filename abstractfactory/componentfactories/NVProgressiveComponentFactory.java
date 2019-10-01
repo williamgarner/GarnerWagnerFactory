@@ -2,29 +2,29 @@ package abstractfactory.componentfactories;
 
 import abstractfactory.components.*;
 
-public class WAComponentFactory extends SlotComponentFactory {
+public class NVProgressiveComponentFactory extends SlotComponentFactory {
     @Override
     public Cabinet createCabinet() {
-        return null;
+        return new MediumCabinet();
     }
 
     @Override
     public Payment createPayment() {
-        return null;
+        return new TicketPayment();
     }
 
     @Override
     public Display createDisplay() {
-        return null;
+        return new LCDDisplay();
     }
 
     @Override
     public GPU createGPU() {
-        return null;
+        return new X77GPU();
     }
 
     @Override
     public OS createOS() {
-        return null;
+        return new AndroidOS();
     }
 }
