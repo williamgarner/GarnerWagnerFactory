@@ -1,6 +1,7 @@
-package abstractfactory;
+package abstractfactory.slotstores;
 
-import factorymethod.Slot;
+import abstractfactory.componentfactories.SlotComponentFactory;
+import abstractfactory.Slot;
 
 public abstract class SlotStore {
     Slot slot;

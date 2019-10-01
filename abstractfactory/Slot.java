@@ -1,9 +1,13 @@
 package abstractfactory;
 
+import abstractfactory.components.*;
+
 public abstract class Slot {
-    String cabinet;
-    String payment;
-    String display;
-    String gpu;
-    String os;
+    Cabinet cabinet;
+    Payment payment;
+    Display display;
+    GPU gpu;
+    OS os;
+
+    public abstract String toString();
 }
